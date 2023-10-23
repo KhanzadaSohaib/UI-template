@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.js">
+  <style>
+    body {
+      background-color: rgb(245, 243, 243);
+    }
+
+    li a {
+      padding: 10px;
+      margin: 0 0 0 37px;
+    }
+
+    .content {
+      display: flex;
+
+    }
+
+    .cnt1 {
+      width: 62%;
+    }
+
+    .cnt3 {
+      width: 37%;
+    }
+
+    .cnt3 .text {
+      background-color: white;
+      width: 300px;
+      margin-left: 70px;
+      border-radius: 15px;
+      height: 80px;
+      box-shadow: 4px 4px 8px #d7d6d6;
+    }
+
+    .cnt3 .text h1 {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .cnt3 img {
+      float: left;
+      border: none;
+    }
+
+    .side-card {
+      padding: 10px;
+      display: flex;
+    }
+
+    .side-card p {
+      margin: 0;
+
+
+    }
+
+    .card1 {
+      width: 65%;
+      display: flex;
+    }
+
+    .card1 h3 {
+      width: 380px;
+      padding: 10px 10px 0px 10px;
+    }
+
+    .card1 h6 {
+      padding: 0px 5px 0px 10px;
+    }
+
+    .card2 {
+      width: 35%;
+      background-color: white;
+      border-radius: 15px;
+      height: auto;
+      box-shadow: 4px 4px 8px #d7d6d6;
+
+    }
+
+    .card2 h1 {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .card2 h4 {
+      padding: 15px;
+      margin-left: 8px;
+
+    }
+
+    .head {
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 20px;
+    }
+
+    .cnt1 h5 {
+      text-align: left;
+      width: 400px;
+      margin-left: 255px;
+      color: #747171;
+    }
+
+    .color {
+      background-color: rgb(232, 233, 235);
+    }
+
+    button {
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: none;
+      font-size: medium;
+    }
+
+    .card-div {
+      height: 530px;
+      background-color: white;
+      border-radius: 28px;
+      width: 378px;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 8px #d7d6d6;
+      margin-left: 15px;
+    }
+
+    .ml {
+      margin-right: 10px;
+    }
+
+
+    @media (min-width: 350px) and (max-width: 576px) {
+
+      .container,
+      .container-fluid,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .cnt1 {
+        width: 100%;
+      }
+
+      .content {
+        display: block;
+      }
+
+      .cnt1 h5 {
+        text-align: left;
+        width: 330px;
+        margin: 0;
+        color: #747171;
+      }
+
+      .cnt2 img {
+        width: 100%;
+      }
+
+      .img img {
+        width: 100%;
+      }
+
+      .cnt2 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 0px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .side-card {
+        width: 260%;
+      }
+
+      .side-card img {
+        float: left;
+      }
+
+      .side-card p {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+      }
+
+      .h4,
+      h4 {
+        font-size: 16px;
+        display: flex;
+      }
+
+      .cnt3 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 10px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .card2 {
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        height: 950px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .card-div {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .card-div .card-div-img {
+        width: 100%;
+      }
+
+      .card1 h3 {
+        width: auto;
+      }
+
+      .cnt3 {
+        width: 100%;
+      }
+
+      .side-card {
+        width: 100%;
+      }
+
+      .card1 {
+        width: 100%;
+        flex-direction: column;
+      }
+
+    }
+
+    /*  Extra Small Media Query  */
+    @media (min-width: 577px) and (max-width: 767px) {
+
+      .container,
+      .container-fluid,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .cnt1 {
+        width: 100%;
+      }
+
+      .content {
+        display: block;
+      }
+
+      .cnt1 h5 {
+        text-align: center;
+        margin-left: 50px;
+        margin: 0;
+        color: #747171;
+        line-height: 1.3;
+      }
+
+      .cnt2 img {
+        width: 100%;
+      }
+
+      .img img {
+        width: 100%;
+      }
+
+      .cnt2 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 0px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .side-card {
+        width: 260%;
+      }
+
+      .side-card img {
+        float: left;
+      }
+
+      .side-card p {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+      }
+
+      .h4,
+      h4 {
+        font-size: 16px;
+        display: flex;
+      }
+
+      .cnt3 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 10px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .card2 {
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        height: 950px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .card-div {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .card-div .card-div-img {
+        width: 100%;
+      }
+
+      .card1 h3 {
+        width: auto;
+      }
+
+      .cnt3 {
+        width: 100%;
+      }
+
+      .side-card {
+        width: 100%;
+      }
+
+      .card1 {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        /* margin-top: 0; */
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.9;
+      }
+
+    }
+
+    /* Small Media Query */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+
+      .container,
+      .container-fluid,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .cnt1 {
+        width: 100%;
+
+      }
+
+      .content {
+        display: block;
+      }
+
+      .cnt1 h5 {
+        text-align: left;
+        width: 330px;
+        margin: 0;
+        color: #747171;
+      }
+
+      .cnt2 img {
+        width: 100%;
+      }
+
+      .img img {
+        width: 100%;
+      }
+
+      .cnt2 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 0px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .side-card {
+        width: 100%;
+        padding: 17px;
+      }
+
+      .side-card img {
+        float: left;
+      }
+
+      .side-card p {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+      }
+
+      .h4,
+      h4 {
+        font-size: 16px;
+        display: flex;
+      }
+
+      .cnt3 {
+        width: 100%;
+      }
+
+      .cnt3 .text {
+        margin-top: 10px;
+        background-color: white;
+        width: 300px;
+        margin-left: 10px;
+        border-radius: 15px;
+        height: 80px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+
+      .card2 {
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        height: 950px;
+        box-shadow: 4px 4px 8px #d7d6d6;
+      }
+    }
+
+    /* Medium Media Query */
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .cnt1 {
+        width: 100%;
+      }
+
+      .cnt3 {
+        width: 100%;
+      }
+
+      .card1 {
+        width: 100%;
+        display: flex;
+      }
+    }
+
+
+    /* Large Media Query */
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      .card2 {
+        margin-left: 78px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="image 1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                COMPANY
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TECHNOLOGIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">BLOGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CONTACT US</a>
+            </li>
+            <a class="navbar-brand" href="#"><img src="Frame 10.png" alt=""></a>
+            <a class="navbar-brand" href="#"><button>GET A QUOTE</button></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <div class="container content  color">
+    <div class="cnt1">
+      <h1 class="head">What's up Tech?</h1>
+      <h5 class="head">Keep yourself updated with the latest happenings in the tech industry with insight of what
+        happens at Geeks of Kolachi</h5>
+    </div>
+    <div class="cnt2"><img src="Image.png" alt=""></div>
+  </div>
+  <br><br>
+
+
+  <div class="container content">
+    <div class="img">
+      <img src="Malaysia.png" alt="">
+    </div>
+    <div class="cnt3">
+      <div class="text">
+        <h1>Recent Post</h1>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 12.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 7.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 12.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 12.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 7.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="ml">
+          <img src="image 7.png" alt="">
+        </div>
+        <div>
+          <p class="p-change"></p>
+          <h4 class="h4-change"></h4>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  <br>
+
+  <div class="container content">
+    <div class="card1">
+      <div>
+        <div onclick="changePage()" class="card-div">
+          <img class="card-div-img" src="card1.png" alt="">
+          <h3>The Best Deployment Stacks and Practices from Our Clients<h3>
+              <h6>September 17, 2021 - Tips & Tricks</h6>
+              <div style="display: flex;">
+                <h6><img src="Vector.png" alt="">Georgia</h6>
+                <h6><img src="Vector (1).png" alt="">Comment</h6>
+
+              </div>
+        </div>
+
+        <div onclick="changePage()" class="card-div">
+          <img class="card-div-img" src="card1.png" alt="">
+          <h3>The Best Deployment Stacks and Practices from Our Clients<h3>
+              <h6>September 17, 2021 - Tips & Tricks</h6>
+              <div style="display: flex;">
+                <h6><img src="Vector.png" alt="">Georgia</h6>
+                <h6><img src="Vector (1).png" alt="">Comment</h6>
+
+              </div>
+        </div>
+      </div>
+      <div>
+        <div onclick="changePage()" class="card-div">
+          <img class="card-div-img" src="card1.png" alt="">
+          <h3>The Best Deployment Stacks and Practices from Our Clients<h3>
+              <h6>September 17, 2021 - Tips & Tricks</h6>
+              <div style="display: flex;">
+                <h6><img src="Vector.png" alt="">Georgia</h6>
+                <h6><img src="Vector (1).png" alt="">Comment</h6>
+
+              </div>
+        </div>
+
+        <div onclick="changePage()" class="card-div">
+          <img class="card-div-img" src="card1.png" alt="">
+          <h3>The Best Deployment Stacks and Practices from Our Clients<h3>
+              <h6>September 17, 2021 - Tips & Tricks</h6>
+              <div style="display: flex;">
+                <h6><img src="Vector.png" alt="">Georgia</h6>
+                <h6><img src="Vector (1).png" alt="">Comment</h6>
+
+              </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="card2">
+
+      <h1>Categories</h1>
+      <h4 onclick="aboutCategories()">Application Marketing (1)</h4>
+      <h4 onclick="aboutCategories()"> AR/VR(9) Artificial Intelligence (9)</h4>
+      <h4 onclick="aboutCategories()"> Blockchain (0) Case study (0) Data Analysis </h4>
+      <h4 onclick="aboutCategories()">(0) Design Thinking (0) Digital Transformation</h4>
+      <h4 onclick="aboutCategories()"> (1) Healthcare (3) Infographics</h4>
+      <h4 onclick="aboutCategories()">(0) IoT & Connected Devices (0) Latest News</h4>
+      <h4 onclick="aboutCategories()">(1) Machine Learning On Demand (5)related </h4>
+      <h4 onclick="aboutCategories()">(7) Social Media (1) Technology Trends</h4>
+      <h4 onclick="aboutCategories()">(5) Thought Leadership (0)UI/UX </h4>
+      <h4 onclick="aboutCategories()">(0) Uncategorized (0)</h4>
+      <h4 onclick="aboutCategories()">Web Applications </h4>
+      <br onclick="aboutCategories()"><br>
+
+      <h4>More..</h4>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
